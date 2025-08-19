@@ -93,17 +93,17 @@ namespace BMICalculator {
         }
 
         private void txbWeight_KeyPress(object sender, KeyPressEventArgs e) {
-           
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back) {
+
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != (char)Keys.Back) {
                 e.Handled = true; 
-           }
+            }
 
         }
 
         private void txbHeight_KeyPress(object sender, KeyPressEventArgs e) {
 
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back) {
-                e.Handled = true;
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != (char)Keys.Back) {
+                e.Handled = true; 
             }
 
         }
