@@ -107,6 +107,7 @@
             this.txbWeight.Size = new System.Drawing.Size(211, 32);
             this.txbWeight.TabIndex = 6;
             this.txbWeight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbWeight_KeyDown);
+            this.txbWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbWeight_KeyPress);
             // 
             // txbHeight
             // 
@@ -115,6 +116,7 @@
             this.txbHeight.Size = new System.Drawing.Size(211, 32);
             this.txbHeight.TabIndex = 7;
             this.txbHeight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbHeight_KeyDown);
+            this.txbHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbHeight_KeyPress);
             // 
             // txbBMI
             // 

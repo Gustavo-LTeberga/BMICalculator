@@ -83,6 +83,7 @@ namespace BMICalculator {
             if (e.KeyCode == Keys.Enter) {
                 txbHeight.Focus();
             }
+            
         }
 
         private void txbHeight_KeyDown(object sender, KeyEventArgs e) {
@@ -91,6 +92,20 @@ namespace BMICalculator {
             }
         }
 
-       
+        private void txbWeight_KeyPress(object sender, KeyPressEventArgs e) {
+           
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back) {
+                e.Handled = true; 
+           }
+
+        }
+
+        private void txbHeight_KeyPress(object sender, KeyPressEventArgs e) {
+
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back) {
+                e.Handled = true;
+            }
+
+        }
     }
 }
